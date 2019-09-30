@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="fonts/iconfont.css">
+    <link href="https://cdn.bootcss.com/Swiper/4.5.1/css/swiper.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet/less" href="css/index.less">
     <script src="js/less.js"></script>
 
@@ -22,6 +24,7 @@
 </head>
 <body>
 <div class="header container-fluid position-fixed">
+    <!--头部-->
     <div class="header-top d-none d-xl-block">
         <div>
         <a class="dropdown-toggle" data-toggle="collapse" href="#collapseExample" role="button">消费者业务网站</a>
@@ -247,7 +250,7 @@
             </div>
         </nav>
     </div>
-
+    <!--Nav导航-->
     <div class="header-bottom d-flex justify-content-between">
         <a href="#" class="second-title">HUAWEI nova 5 Pro</a>
         <a href="#" class="arrow d-xl-none d-inline-block"></a>
@@ -258,107 +261,66 @@
             <li ><a href="#" class="btn btn-danger text-white">购买</a></li>
         </ul>
     </div>
+
 </div>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
-<p>1111</p>
+<!--第一屏-->
+<div class="section1">
+    <!--图片路径 不能/开头-->
+    ​<picture>
+    <!--手机端图-->
+    <source media="(max-width: 768px)" srcset="./images/mobile_bg.jpg">
+    <!--pc端图-->
+    <img src="images/pc_bg.jpg" class="img-fluid">
+</picture>
+</div>
+<div class="section2">
+    <div class="section2-top d-flex justify-content-between">
+        <div>
+            <p>潮流设计+轻盈机身</p>
+            <p>一眼心动，</p>
+            <p>一触流连</p>
+        </div>
+        <div>nova 5 Pro 将炫光、渐变与钻石切面巧妙结合，形成光影与空间的视觉艺术。创新 3D 精雕纹理工艺，打造幻境星芒般的光影效果，令机身色彩随光影自由流动，纯然中不失唯美梦幻。一眼，怦然心动。7.33 毫米轻薄机身，优美的曲线弧度，打造舒适手感。一触，流连忘返。
+        </div>
+    </div>
+    <div class="section2-middle text-center">
+        <img src="images/section2-left.png" alt="" class="mr-5">
+        <img src="images/section2-right.png" alt="" class="ml-5">
+        <img src="images/section2-text.png" alt="">
+        <img src="images/section2-center.png" alt="">
+    </div>
+    <div class="section2-bottom">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/orange_left.png" class="ani" swiper-animate-effect="slideInUp">
+                    <img src="images/orange_right.png" class="ani" swiper-animate-effect="slideInUp">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/green_left.png" class="ani" swiper-animate-effect="slideInUp">
+                    <img src="images/green_right.png" class="ani" swiper-animate-effect="slideInUp">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/purple_left.png" class="ani" swiper-animate-effect="slideInUp">
+                    <img src="images/purple_right.png"class="ani" swiper-animate-effect="slideInUp">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/black_left.png" class="ani" swiper-animate-effect="slideInUp">
+                    <img src="images/black_right.png" class="ani" swiper-animate-effect="slideInUp">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            <p class="swiper-line"></p>
+            <p class="swiper-name">
+                <span>珊瑚橙<br>绮境森林<br>仲夏紫<br>亮黑色</span>
+            </p>
+            <p class="swiper-num">
+                <span>01<br>02<br>03<br>04</span>
+            </p>
+        </div>
+    </div>
+</div>
 <!--模态窗口-->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -410,10 +372,14 @@
 </div>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="../js/jquery-3.1.1.js"></script>
-<!--很多提示/弹窗通过propper实现，需要导入-->
-<script src="../js/popper.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/4.5.1/js/swiper.js"></script>
+<script src="js/swiper.animate.min.js"></script>
+<script src="https://cdn.bootcss.com/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+<script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
+<script src="https://cdn.bootcss.com/gsap/latest/easing/EasePack.min.js"></script>
 <script src="js/index.js"></script>
 
 

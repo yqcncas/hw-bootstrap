@@ -43,6 +43,32 @@ $(function () {
         }
     })
 
+    var mySwiper = new Swiper ('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            bullerClass:"my-bullet",
+            bulletActiveClass:"my-bullet-active"
+        },
+        autoplay:{
+            delay:3000
+        },
+        on:{
+            init: function(){
+                swiperAnimateCache(this); //隐藏动画元素
+                swiperAnimate(this); //初始化完成开始动画
+            },
+            slideChangeTransitionEnd: function(){
+                swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+
+                //页面滑动结束时可以拿到对应的index下标
+                let offsetY = this.activeIndex * 45;
+                $('.swiper-name>span').animate({top:-offsetY},1000)
+                $('.swiper-num>span').animate({top:-offsetY},1000)
+            }
+        }
+    })
+
 
 })
 
